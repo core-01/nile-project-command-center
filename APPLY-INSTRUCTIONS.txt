@@ -1,0 +1,10 @@
+1. Back up/export your current Command Center workspace JSON from Settings.
+2. Extract this package into your existing nile-project-command-center local clone.
+3. Copy the docs/ folder into the repository root (merge with existing docs if present).
+4. Run: node apply-updates.mjs
+5. Run: npm run build
+6. Review changes, commit and push to main.
+7. Wait for GitHub Actions Pages deployment to complete.
+8. Refresh the published site. If it still shows old task data, check the browser's saved workspace/localStorage; do not delete it without a backup.
+
+This package does not directly modify GitHub. The connected GitHub integration did not grant write access.

@@ -161,18 +161,19 @@ export const seedData: ProjectState = {
     {
       "id": "NT-001",
       "title": "Finalize business requirements",
-      "description": "Plan, implement, validate and document: finalize business requirements.",
+      "description": "Finalize and baseline the Nile Technologies logistics business requirements: services, pricing, commercial workflow, operations lifecycle, financial controls and MVP scope.",
       "phaseId": "P0",
       "module": "Administration",
       "category": "Business Analysis",
       "priority": "High",
-      "status": "Not Started",
+      "status": "Completed",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Finalize business requirements is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "BRD v1.0 is committed.",
+        "All eight transportation service categories and eight pricing methods are recorded.",
+        "MVP business lifecycle, operating rules and phases are documented."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -181,18 +182,19 @@ export const seedData: ProjectState = {
     {
       "id": "NT-002",
       "title": "Finalize system architecture",
-      "description": "Plan, implement, validate and document: finalize system architecture.",
+      "description": "Document modular-monolith architecture, module boundaries, API/data flow, deployment topology and pending decisions.",
       "phaseId": "P0",
       "module": "Administration",
       "category": "Architecture",
       "priority": "High",
-      "status": "Not Started",
+      "status": "In Review",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Finalize system architecture is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "Architecture blueprint is documented.",
+        "Module boundaries and dependency rules are documented.",
+        "Approved and pending decisions are clearly distinguished."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -201,18 +203,19 @@ export const seedData: ProjectState = {
     {
       "id": "NT-003",
       "title": "Finalize database architecture",
-      "description": "Plan, implement, validate and document: finalize database architecture.",
+      "description": "Finalize Oracle ATP logical and physical schema, tenant-aware relationships, constraints, indexes and migration sequence.",
       "phaseId": "P0",
       "module": "Administration",
       "category": "Architecture",
       "priority": "High",
-      "status": "Not Started",
+      "status": "In Progress",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Finalize database architecture is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "ER model covers identity, CRM, commercial, logistics, fleet and finance.",
+        "Tenant ownership, constraints and indexes are reviewed.",
+        "Oracle-compatible schema design is documented."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -221,18 +224,19 @@ export const seedData: ProjectState = {
     {
       "id": "NT-004",
       "title": "Define tenant model",
-      "description": "Plan, implement, validate and document: define tenant model.",
+      "description": "Approve shared Oracle ATP database/shared schema tenancy with mandatory tenant_id and trusted server-side tenant context.",
       "phaseId": "P0",
       "module": "Administration",
       "category": "Architecture",
       "priority": "High",
-      "status": "Not Started",
+      "status": "Completed",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Define tenant model is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "Shared schema strategy is approved.",
+        "Tenant identity comes from authenticated backend identity, never browser input.",
+        "Tenant isolation includes services, repositories, jobs, documents and automated tests."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -241,18 +245,18 @@ export const seedData: ProjectState = {
     {
       "id": "NT-005",
       "title": "Define user roles and permissions",
-      "description": "Plan, implement, validate and document: define user roles and permissions.",
+      "description": "Define platform and tenant roles, granular permissions, scope boundaries and record-level authorization.",
       "phaseId": "P0",
       "module": "CRM and Sales",
       "category": "Business Analysis",
       "priority": "High",
-      "status": "Not Started",
+      "status": "Ready",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Define user roles and permissions is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "Platform Superadmin and tenant roles are distinguished.",
+        "Admin, operations, fleet, finance, customer, partner and driver permissions are mapped."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -261,18 +265,18 @@ export const seedData: ProjectState = {
     {
       "id": "NT-006",
       "title": "Define backend project structure",
-      "description": "Plan, implement, validate and document: define backend project structure.",
+      "description": "Define feature-oriented Maven/Spring Boot modular-monolith package structure and module ownership.",
       "phaseId": "P0",
       "module": "Administration",
       "category": "Backend",
       "priority": "High",
-      "status": "Not Started",
+      "status": "Completed",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Define backend project structure is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "Backend package structure and module ownership are documented.",
+        "Cross-module repository access is prohibited."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -281,18 +285,18 @@ export const seedData: ProjectState = {
     {
       "id": "NT-007",
       "title": "Define frontend project structure",
-      "description": "Plan, implement, validate and document: define frontend project structure.",
+      "description": "Define React/TypeScript frontend structure, route groups, API client, state and feature conventions.",
       "phaseId": "P0",
       "module": "Administration",
       "category": "Backend",
       "priority": "High",
-      "status": "Not Started",
+      "status": "Ready",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Define frontend project structure is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "Feature structure is documented.",
+        "Internal, customer, partner and driver route groups are defined."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -301,7 +305,7 @@ export const seedData: ProjectState = {
     {
       "id": "NT-008",
       "title": "Configure Oracle ATP connectivity",
-      "description": "Plan, implement, validate and document: configure oracle atp connectivity.",
+      "description": "Configure and verify secure connectivity from Spring Boot to the existing Oracle ATP database.",
       "phaseId": "P0",
       "module": "Administration",
       "category": "Database",
@@ -311,8 +315,9 @@ export const seedData: ProjectState = {
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Configure Oracle ATP connectivity is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "Select TLS or mTLS connection mode.",
+        "Keep credentials and wallet material outside Git.",
+        "Verify connectivity from the development environment."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -321,18 +326,18 @@ export const seedData: ProjectState = {
     {
       "id": "NT-009",
       "title": "Prepare OCI deployment architecture",
-      "description": "Plan, implement, validate and document: prepare oci deployment architecture.",
+      "description": "Prepare OCI Linux deployment topology, Nginx/HTTPS, systemd, secrets, storage and observability plan.",
       "phaseId": "P0",
       "module": "Administration",
       "category": "Architecture",
       "priority": "High",
-      "status": "Not Started",
+      "status": "Ready",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Prepare OCI deployment architecture is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "OCI deployment topology is documented.",
+        "Health checks, logs, backups and database privileges are documented."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -341,18 +346,18 @@ export const seedData: ProjectState = {
     {
       "id": "NT-010",
       "title": "Create API standards",
-      "description": "Plan, implement, validate and document: create api standards.",
+      "description": "Define REST API conventions: versioning, DTOs, pagination, errors, validation, idempotency and security.",
       "phaseId": "P0",
       "module": "CRM and Sales",
       "category": "Backend",
       "priority": "High",
-      "status": "Not Started",
+      "status": "Ready",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Create API standards is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "API conventions and standard errors are documented.",
+        "Tenant ID is never trusted from arbitrary request fields."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -361,18 +366,19 @@ export const seedData: ProjectState = {
     {
       "id": "NT-011",
       "title": "Create GitHub repositories",
-      "description": "Plan, implement, validate and document: create github repositories.",
+      "description": "Create and identify separate command-center and logistics-platform GitHub repositories.",
       "phaseId": "P0",
       "module": "Administration",
       "category": "Deployment",
       "priority": "High",
-      "status": "Not Started",
+      "status": "Completed",
       "estimate": 2,
       "actual": 0,
       "dependencies": [],
       "acceptance": [
-        "Create GitHub repositories is implemented and validated.",
-        "Relevant documentation and tests are updated."
+        "Command-center repository exists.",
+        "Platform repository exists for actual application source.",
+        "Command center is identified as an engineering tracker."
       ],
       "notes": "",
       "createdAt": "2026-11-15",
@@ -1804,34 +1810,67 @@ export const seedData: ProjectState = {
     {
       "id": "ADR-001",
       "title": "Modular monolith versus microservices",
-      "context": "Initial platform architecture must balance delivery speed and future scale.",
+      "context": "Balance delivery speed, maintainability and future scale for a single developer.",
       "options": "Modular monolith; microservices",
-      "chosen": "Pending decision",
-      "reason": "To be evaluated against single-developer delivery capacity and operational complexity.",
-      "consequences": "Architecture decision remains open.",
-      "status": "Proposed",
+      "chosen": "Modular monolith",
+      "reason": "One Spring Boot deployment with explicit feature modules minimizes operational overhead while preserving boundaries.",
+      "consequences": "Modules own their logic and persistence; no cross-module repository access. Microservices are deferred until justified.",
+      "status": "Approved",
       "date": "2026-11-15"
     },
     {
       "id": "ADR-002",
-      "title": "Oracle ATP as primary database",
-      "context": "The project specifies Oracle Autonomous Transaction Processing.",
+      "title": "Primary database",
+      "context": "An existing Oracle Autonomous Transaction Processing database is available.",
       "options": "Oracle ATP; alternative relational database",
       "chosen": "Oracle ATP",
-      "reason": "Selected technology direction from the project brief; connectivity and schema design still need validation.",
-      "consequences": "Application data access and deployment must support ATP connectivity.",
-      "status": "Proposed",
+      "reason": "Use the existing Oracle ATP investment for the MVP.",
+      "consequences": "Schema, migrations, JDBC, types and indexes must be Oracle-compatible; connectivity still needs verification.",
+      "status": "Selected",
       "date": "2026-11-15"
     },
     {
       "id": "ADR-003",
-      "title": "Multi-tenant data isolation strategy",
-      "context": "The product may become a multi-tenant SaaS platform.",
-      "options": "Shared schema with tenant key; schema per tenant; database per tenant",
-      "chosen": "Pending decision",
-      "reason": "Requires security, cost and operational analysis.",
-      "consequences": "Tenant model must be decided before core schema approval.",
-      "status": "Proposed",
+      "title": "Multi-tenant data isolation",
+      "context": "Initial Nile deployment may expand to multiple logistics companies.",
+      "options": "Shared schema; schema per tenant; database per tenant",
+      "chosen": "One shared Oracle ATP database and shared schema with mandatory tenant_id",
+      "reason": "Lowest operational complexity for the MVP, with tenant scope enforced throughout backend and persistence.",
+      "consequences": "Tenant-aware constraints, jobs, documents and cross-tenant negative tests are mandatory. Nile is not hardcoded as a special tenant.",
+      "status": "Approved",
+      "date": "2026-11-15"
+    },
+    {
+      "id": "ADR-004",
+      "title": "Authentication session and token strategy",
+      "context": "React frontend requires secure authenticated access to the Spring Boot API.",
+      "options": "JWT access + refresh tokens; server-side sessions",
+      "chosen": "Pending approval",
+      "reason": "JWT access/refresh is recommended but token storage, expiry, rotation and revocation are not approved.",
+      "consequences": "Do not implement token lifecycle assumptions until approved. Spring Security remains the foundation.",
+      "status": "Pending",
+      "date": "2026-11-15"
+    },
+    {
+      "id": "ADR-005",
+      "title": "Transportation pricing methods",
+      "context": "Business requires flexible one-off and repeat-customer pricing.",
+      "options": "Per km; per trip; per ton/weight; per vehicle; per day/month; fixed route; contract; custom quotation",
+      "chosen": "Support all eight pricing methods",
+      "reason": "The MVP must support the agreed service and commercial use cases.",
+      "consequences": "Rules are configurable by customer, service, vehicle category and route; additional charges and discounts are supported.",
+      "status": "Approved",
+      "date": "2026-11-15"
+    },
+    {
+      "id": "ADR-006",
+      "title": "Document storage",
+      "context": "POD, contracts, vehicle documents, invoices and receipts require file storage.",
+      "options": "Database BLOB; OCI Object Storage",
+      "chosen": "OCI Object Storage with ATP metadata",
+      "reason": "Keep transactional metadata in ATP and binary files in object storage.",
+      "consequences": "Private buckets, tenant-scoped keys and authorization checks are required; final configuration remains pending.",
+      "status": "Recommended",
       "date": "2026-11-15"
     }
   ],
@@ -1897,5 +1936,5 @@ export const seedData: ProjectState = {
       "status": "Open"
     }
   ],
-  "updatedAt": "2026-11-15T00:00:00.000Z"
+  "updatedAt": "2026-11-15T09:35:02.647Z"
 };
